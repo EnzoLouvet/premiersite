@@ -1,0 +1,168 @@
+
+
+/*Modification sur le <body>*/
+body{
+font-family: 'Hanalei Fill', cursive;
+font-family: 'Staatliches', cursive;
+background-image:url(pictures/background.png);
+font-size: 38px;
+font : center;
+text-shadow: #FC0 1px 0 10px;
+
+}
+
+h1 { color: white; }
+	
+
+/*Modification sur les différentes classes*/
+.button{
+	font-size: 54px;
+	padding: 15px 25px;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #f1c40f;
+	border :none;
+	cursor: pointer;
+	box-shadow: 0 9px #f39c12;
+
+}
+.button:hover{
+/*Permet que quand la souris est dessus la couleur jaune clair descend de trois pixels*/
+	transform: translateY(3px);
+	box-shadow: 0 6px #f1c40f;
+}
+.button:active{
+/*Permet que lorsqu'on clique sur le bouton le jaune clair descend de 7 pixel ce qui donne une impression
+/*d'animation*/
+	transform: translateY(7px);
+	box-shadow: 0 6px #f1c40f;
+}
+
+.image1{
+	
+	position: absolute;
+	left:1px;
+	bottom:70%;
+	
+}
+
+.image2{
+	
+	position: absolute;
+	right:1%;
+	bottom : 70%;
+}
+
+.explosion{
+
+	position: absolute;
+	right:50%;
+	bottom:30%;
+
+
+}
+
+.display1{
+
+	font-size: 40px;
+	color: black;
+	position: absolute;
+	left:25%;
+	bottom:20%;
+}
+
+.button2{
+	position: absolute;
+	left:80%;
+	font-size: 54px;
+	padding: 15px 25px;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #f1c40f;
+	border :none;
+	cursor: pointer;
+	box-shadow: 0 9px #f39c12;
+
+}
+.button2:hover{
+/*Permet que quand la souris est dessus la couleur jaune clair descend de trois pixels*/
+	transform: translateY(3px);
+	box-shadow: 0 6px #f1c40f;
+}
+.button2:active{
+/*Permet que lorsqu'on clique sur le bouton le jaune clair descend de 7 pixel ce qui donne une impression
+/*d'animation*/
+	transform: translateY(7px);
+	box-shadow: 0 6px #f1c40f;
+}
+
+.basicbee{
+
+	position: absolute;
+	left:0%;
+	bottom:20%;
+}
+
+.bearbee{
+
+	position: absolute;
+	right:50%;
+	bottom:20%;
+
+}
+
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+.expand {
+    animation: Anim2 .5s;
+    background: orange;
+    border: 1px solid yellow;
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+
+
+
+}
+

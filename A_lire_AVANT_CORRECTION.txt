@@ -1,0 +1,5 @@
+Pour les précisions sur l'html et le css je l'ai fait que sur une page (index.html, style.css et app.js) puisque les autres seront quasiment similaires.
+
+Je n'ai malheureusement pas réussis à faire un digicode intégré à mon site même en recherchant :/
+
+Concernant le javascript j'ai pu faire quelque chose malgré tout.
